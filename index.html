@@ -23,6 +23,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'common-para-color': '#FFFFFF99',
                     }
                 }
             }
@@ -30,18 +31,23 @@
     </script>
     <!-- CSS styles -->
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", serif;
+        }
+
+        .slider {
+            background: url(./Images/1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 
 <body class="m-0 p-0 box-border font-manrope">
     <!-- Header Starts -->
-    <header class="w-11/12 lg:w-5/6 lg:max-w-7xl mx-auto ml-0 lg:ml-28 mt-8 lg:mt-16">
+    <header class="w-11/12 lg:w-5/6 lg:max-w-7xl mx-auto">
         <!-- Navbar Starts -->
-
-        <div class="navbar flex justify-between items-center">
+        <div class="navbar flex justify-between items-center my-6 lg:my-12">
             <div class="navbar-part-one flex justify-center items-center gap-2">
                 <!-- Hamburger -->
                 <div class="hamburger flex lg:hidden">
@@ -53,6 +59,7 @@
                                     d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
                         </div>
+                        <!-- Hamburger Dropdown Contents -->
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black font-bold">
                             <li><a>Home</a></li>
@@ -64,8 +71,7 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-2xl lg:text-4xl font-extrabold ">Hockey<span
-                            class="text-[#FF4240]">'</span>s</h2>
+                    <h2 class="text-2xl lg:text-4xl font-extrabold ">Hockey<span class="text-[#FF4240]">'</span>s</h2>
                 </div>
             </div>
             <div class="navbar-part-two hidden lg:flex">
@@ -85,8 +91,33 @@
             </div>
         </div>
         <!-- Banner Starts -->
+        <div class="banner relative flex flex-col gap-4 justify-center items-center mb-10 lg:mb-24">
+            <!-- Slider Starts -->
+            <div class="banner-slider carousel w-full rounded-lg">
+                <!-- Slide 1 -->
+                <div id="slide1"
+                    class=" carousel-item relative w-full flex flex-col items-center justify-center bg-center">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div
+                        class="carousel-slider-btn absolute lg:left-8 bottom-9 hidden lg:flex gap-4 justify-between items-center">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Sticky-Portion Starts -->
+            <div
+                class="banner-sticky-portion lg:absolute lg:bottom-10 right-10 rounded-lg shadow-xl bg-black text-white w-full lg:w-[600px] h-[140px] lg:h-[165px] p-4 lg:p-8 flex flex-col gap-4">
+                <h4 class="text-[18px] lg:text-2xl font-extrabold">Meet all the heroes from the field</h4>
+                <p class="font-medium text-common-para-color text-sm lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </div>
+        <div class=" border-dashed mb-6 lg:mb-8 border-[#13131833] border-t"></div>
     </header>
-    <main></main>
+    <main>
+        <section></section>
+    </main>
     <footer></footer>
 </body>
 
