@@ -30,12 +30,62 @@
     </script>
     <!-- CSS styles -->
     <style>
-
+        .font-manrope{
+            font-family: "Manrope", serif;
+        }
     </style>
 </head>
 
-<body>
-    <header></header>
+<body class="m-0 p-0 box-border font-manrope">
+    <!-- Header Starts -->
+    <header class="w-11/12 lg:w-5/6 lg:max-w-7xl mx-auto ml-0 lg:ml-28 mt-8 lg:mt-16">
+        <!-- Navbar Starts -->
+
+        <div class="navbar flex justify-between items-center">
+            <div class="navbar-part-one flex justify-center items-center gap-2">
+                <!-- Hamburger -->
+                <div class="hamburger flex lg:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black font-bold">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl lg:text-4xl font-extrabold ">Hockey<span
+                            class="text-[#FF4240]">'</span>s</h2>
+                </div>
+            </div>
+            <div class="navbar-part-two hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 flex gap-4 text-[#424247]">
+                    <li><span class="text-[#FF4240] font-bold">Home</span></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-part-three">
+                <div class="flex justify-center items-center gap-6">
+                    <img class="hidden lg:flex w-6 h-6" src="./icons/search.png" alt="">
+                    <button class="btn bg-[#FF4240] w-36 h-14 text-white text-xl font-bold">Get Ticket</button>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Starts -->
+    </header>
     <main></main>
     <footer></footer>
 </body>
