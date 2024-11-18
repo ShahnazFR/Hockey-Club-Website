@@ -61,6 +61,9 @@
             border-radius: 16px;
 
         }
+        .fix-btn{
+            left: calc((100% - 112px)/2 );
+        }
     </style>
 </head>
 
@@ -121,7 +124,7 @@
                     class=" carousel-item relative w-full flex flex-col items-center justify-center bg-center">
                     <img src="./Images/1.png" class="w-full" />
                     <div
-                        class="carousel-slider-btn absolute lg:left-8 bottom-9 hidden lg:flex gap-4 justify-between items-center">
+                        class="carousel-slider-btn fix-btn absolute lg:left-8 bottom-3 md:bottom-9 flex gap-4 justify-between items-center border border-red-600">
                         <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
                         <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
                     </div>
